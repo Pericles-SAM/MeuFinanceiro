@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meu-financeiro-count-up"
+version = "0.0.1"
+description = "Animated financial counters for Meu Financeiro"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Pericles SAM", email = "john@example.com" }]
+dependencies = ["streamlit >= 1.51"]
+
+[tool.setuptools.packages.find]
+include = ["meu_financeiro_count_up*"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+meu_financeiro_count_up = ["frontend/build/**/*", "pyproject.toml"]

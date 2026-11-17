@@ -1,0 +1,8 @@
+# Ship a minimal metadata file that can be picked up by Streamlit at runtime.
+[project]
+name = "meu-financeiro-count-up"
+version = "0.0.1"
+
+[[tool.streamlit.component.components]]
+name = "meu_financeiro_count_up"
+asset_dir = "frontend/build"

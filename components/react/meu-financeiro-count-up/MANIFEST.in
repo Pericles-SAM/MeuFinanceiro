@@ -1,0 +1,2 @@
+recursive-include meu_financeiro_count_up/frontend/build *
+include pyproject.toml

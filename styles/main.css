@@ -1,0 +1,130 @@
+/* =====================================================
+   MEU FINANCEIRO — SOFT BLUE FINTECH
+   CSS estrutural e adaptável aos temas claro e escuro.
+   As cores principais vêm de .streamlit/config.toml.
+   ===================================================== */
+
+/* Área principal: as cores de fundo e texto ficam sob
+   controle do tema nativo do Streamlit. */
+.block-container {
+    max-width: 1480px;
+    padding-top: 1.8rem;
+    padding-bottom: 2.8rem;
+}
+
+/* Cabeçalho superior */
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+/* Menu lateral: fundo, texto e seleção são definidos
+   pelo tema; aqui ajustamos apenas a separação e o espaço. */
+[data-testid="stSidebar"] {
+    border-right: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    padding-top: 1.35rem;
+}
+
+/* Hierarquia tipográfica */
+h1, h2, h3, h4 {
+    letter-spacing: -0.025em;
+}
+
+h1 { font-weight: 650; }
+h2, h3, h4 { font-weight: 600; }
+
+/* Indicadores: o fundo usa uma mistura muito sutil da
+   cor atual do texto, adaptando-se aos dois temas. */
+[data-testid="stMetric"] {
+    background: color-mix(in srgb, currentColor 3%, transparent);
+    border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+    border-radius: 14px;
+    padding: 1.05rem 1.2rem;
+    box-shadow: 0 2px 12px color-mix(in srgb, currentColor 5%, transparent);
+}
+
+[data-testid="stMetricValue"] {
+    font-weight: 650;
+}
+
+/* Botões: mantemos cores, estados e contraste sob controle
+   do tema nativo; o CSS cuida somente do formato. */
+.stButton > button,
+.stFormSubmitButton > button,
+.stDownloadButton > button {
+    border-radius: 10px;
+    font-weight: 550;
+    transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover,
+.stDownloadButton > button:hover {
+    transform: translateY(-1px);
+}
+
+.stButton > button:focus-visible,
+.stFormSubmitButton > button:focus-visible,
+.stDownloadButton > button:focus-visible {
+    outline-offset: 2px;
+}
+
+/* Campos e seletores: preserva as cores nativas do tema. */
+[data-baseweb="input"] > div,
+[data-baseweb="select"] > div,
+[data-baseweb="textarea"] {
+    border-radius: 10px;
+}
+
+/* Expansores e formulários */
+[data-testid="stExpander"] {
+    border-radius: 12px;
+}
+
+[data-testid="stForm"] {
+    border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+/* Tabelas */
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Mensagens e divisórias */
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+hr {
+    border-color: color-mix(in srgb, currentColor 14%, transparent);
+}
+
+/* Respeita usuários que preferem menos animações. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Ajustes para telas menores. */
+@media (max-width: 768px) {
+    .block-container {
+        padding-top: 1.15rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 0.9rem;
+        border-radius: 12px;
+    }
+}

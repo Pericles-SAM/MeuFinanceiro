@@ -1,0 +1,99 @@
+# =====================================================
+# MEU FINANCEIRO — SOFT BLUE FINTECH
+# Temas Claro e Escuro alternáveis pelo menu do Streamlit.
+# =====================================================
+
+[theme]
+# Aparência inicial. O usuário poderá alternar no menu do app.
+base = "light"
+font = "sans-serif"
+baseRadius = "medium"
+buttonRadius = "medium"
+showSidebarBorder = true
+showWidgetBorder = true
+
+# -----------------------------------------------------
+# TEMA CLARO
+# -----------------------------------------------------
+[theme.light]
+primaryColor = "#456987"
+backgroundColor = "#F3F6F9"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#293B4D"
+linkColor = "#456987"
+borderColor = "#E2E8EF"
+dataframeBorderColor = "#E2E8EF"
+dataframeHeaderBackgroundColor = "#E8F0F7"
+dataframeHeaderTextColor = "#293B4D"
+codeBackgroundColor = "#EAF0F5"
+codeTextColor = "#293B4D"
+chartCategoricalColors = ["#6386A8", "#39805B", "#D6A34A", "#BD5D51", "#96A9BC"]
+blueColor = "#6386A8"
+blueBackgroundColor = "#E8F0F7"
+blueTextColor = "#365A78"
+greenColor = "#39805B"
+greenBackgroundColor = "#EAF4ED"
+greenTextColor = "#286346"
+yellowColor = "#D6A34A"
+yellowBackgroundColor = "#FFF4E3"
+yellowTextColor = "#8A5E19"
+orangeColor = "#C88736"
+orangeBackgroundColor = "#FFF0DF"
+orangeTextColor = "#87531C"
+redColor = "#BD5D51"
+redBackgroundColor = "#FBECE9"
+redTextColor = "#8F3F36"
+grayColor = "#8796A5"
+grayBackgroundColor = "#EDF1F5"
+grayTextColor = "#526273"
+
+[theme.light.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F6F9"
+primaryColor = "#456987"
+textColor = "#293B4D"
+linkColor = "#456987"
+borderColor = "#E2E8EF"
+
+# -----------------------------------------------------
+# TEMA ESCURO
+# -----------------------------------------------------
+[theme.dark]
+primaryColor = "#3F7097"
+backgroundColor = "#111923"
+secondaryBackgroundColor = "#1A2735"
+textColor = "#E6EDF4"
+linkColor = "#A9CDEA"
+borderColor = "#2A3949"
+dataframeBorderColor = "#2A3949"
+dataframeHeaderBackgroundColor = "#223447"
+dataframeHeaderTextColor = "#E6EDF4"
+codeBackgroundColor = "#1A2735"
+codeTextColor = "#DDE8F2"
+chartCategoricalColors = ["#8CB7DA", "#72C295", "#E4B55D", "#E58A80", "#A7B8C8"]
+blueColor = "#8CB7DA"
+blueBackgroundColor = "#1B3247"
+blueTextColor = "#BDD8ED"
+greenColor = "#72C295"
+greenBackgroundColor = "#173528"
+greenTextColor = "#A8D9BA"
+yellowColor = "#E4B55D"
+yellowBackgroundColor = "#3A2D18"
+yellowTextColor = "#F0D49A"
+orangeColor = "#E2A45D"
+orangeBackgroundColor = "#3B2B1C"
+orangeTextColor = "#F0C28F"
+redColor = "#E58A80"
+redBackgroundColor = "#3D2524"
+redTextColor = "#F2B3AC"
+grayColor = "#A7B5C3"
+grayBackgroundColor = "#293644"
+grayTextColor = "#C4CFD9"
+
+[theme.dark.sidebar]
+backgroundColor = "#142231"
+secondaryBackgroundColor = "#1A2A3A"
+primaryColor = "#3F7097"
+textColor = "#E6EDF4"
+linkColor = "#A9CDEA"
+borderColor = "#2A3B4D"

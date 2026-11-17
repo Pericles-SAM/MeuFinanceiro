@@ -1,0 +1,73 @@
+# =================================
+# PYTHON
+# =================================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# =================================
+# TESTES E CACHE
+# =================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =================================
+# BANCO DE DADOS
+# =================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Backups pessoais
+backups/
+*.bak
+
+# =================================
+# NODE.JS / REACT
+# =================================
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =================================
+# STREAMLIT - DADOS PRIVADOS
+# =================================
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# =================================
+# VARIÁVEIS DE AMBIENTE
+# =================================
+.env
+.env.*
+!.env.example
+
+# =================================
+# EDITORES
+# =================================
+.vscode/
+.idea/
+
+# =================================
+# SISTEMA OPERACIONAL
+# =================================
+.DS_Store
+Thumbs.db
+
+# =================================
+# ARQUIVOS TEMPORÁRIOS
+# =================================
+*.log
+*.tmp
+# Configurações locais de agentes
+.agents/
